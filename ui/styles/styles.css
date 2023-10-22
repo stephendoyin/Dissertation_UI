@@ -511,7 +511,7 @@ footer {
 }
 
 .field .control input:focus ~ label,
-.field .control input:not(:placeholder-shown) ~ label {
+.field .control input:not(:placeholder-shown) ~ label, .field .control label.is-active {
   font-size: 12px;
   top: 12px;
   font-weight: 700;
