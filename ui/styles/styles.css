@@ -641,10 +641,10 @@ footer {
   margin: 16px auto 0;
 }
 
-.form-card-bt-strip.no-bg{
+.form-card-bt-strip.no-bg {
   background: transparent;
   box-shadow: none;
-} 
+}
 
 .form-card-bt-strip p {
   color: #333;
@@ -825,6 +825,9 @@ footer {
   }
   .tiles-item p {
     font-size: 16px;
+  }
+  .faq-section {
+    padding: 64px;
   }
   .faq-section .container {
     padding: 32px;
