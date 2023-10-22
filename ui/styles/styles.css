@@ -515,6 +515,7 @@ footer {
   font-size: 12px;
   top: 12px;
   font-weight: 700;
+  z-index: 3;
 }
 
 .field .control .input {
@@ -867,4 +868,9 @@ footer {
   .aside {
     display: block;
   }
+}
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 1) inset !important;
 }
