@@ -51,7 +51,7 @@ body {
 
 .navbar-link {
   height: 72px;
-  width: 104px;
+  min-width: 96px;
   display: flex;
   justify-content: center;
   color: #000;
@@ -59,8 +59,14 @@ body {
   padding: 0;
   align-items: center;
 }
+
 .navbar-item {
+  padding: 0 16px;
+}
+
+.navbar-item:last-child {
   padding: 0;
+  margin-left: 16px;
 }
 
 .navbar-link.is-active {
