@@ -1,3 +1,7 @@
+html {
+  overflow-y: unset;
+}
+
 body {
   font-size: 16px;
   background-position: 50% top !important;
@@ -883,4 +887,10 @@ footer {
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 1) inset !important;
+}
+
+@media only screen and (max-height: 890px) {
+  .form-wrapper {
+    height: unset;
+}
 }
