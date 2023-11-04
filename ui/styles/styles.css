@@ -784,6 +784,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .form-wrapper.dashboard-add-admin {
+    height: calc(100vh - 196px);
+  }
   .form-card-bt-strip {
     flex-direction: row;
   }
@@ -889,17 +892,32 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 1) inset !important;
 }
 
-@media only screen and (max-height: 720px) {
-  .form-wrapper {
+@media only screen and (max-height: 787px) {
+  .form-wrapper.reset-password {
     height: unset;
   }
-  
 }
-@media only screen and (min-height: 720px) {
-  footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
+
+@media only screen and (max-height: 832px) {
+  .form-wrapper.sign-in {
+    height: unset;
   }
-  
+}
+
+@media only screen and (max-height: 715px) {
+  .form-wrapper.forgot-pswd {
+    height: unset;
+  }
+}
+
+@media only screen and (max-height: 619px) {
+  .form-wrapper.forgot-pswd-2 {
+    height: unset;
+  }
+}
+
+@media only screen and (max-height: 952px) {
+  .form-wrapper.dashboard-add-admin {
+    height: unset;
+  }
 }
