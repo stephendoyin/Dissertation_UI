@@ -525,7 +525,8 @@ footer {
 }
 
 .field .control input:focus ~ label,
-.field .control input:not(:placeholder-shown) ~ label, .field .control label.is-active {
+.field .control input:not(:placeholder-shown) ~ label,
+.field .control label.is-active {
   font-size: 12px;
   top: 12px;
   font-weight: 700;
@@ -884,13 +885,21 @@ footer {
   }
 }
 
-
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 1) inset !important;
 }
 
-@media only screen and (max-height: 890px) {
+@media only screen and (max-height: 720px) {
   .form-wrapper {
     height: unset;
+  }
+  
 }
+@media only screen and (min-height: 720px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
 }
