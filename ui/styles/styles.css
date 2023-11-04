@@ -141,7 +141,7 @@ a.navbar-item:hover {
   height: 100%;
 }
 
-.container {
+.container, .section-wrapper {
   max-width: 1157px !important;
   margin: 0 auto;
 }
