@@ -571,6 +571,7 @@ section.list-section {
   padding: 16px 24px;
   overflow: hidden;
   border-radius: 4323px;
+  cursor: pointer;
 }
 
 .radio-label [type="radio"]:not(:checked) + .inner-span-label{
@@ -661,4 +662,10 @@ section.list-section {
 
 .radio-control{
   margin-bottom: 24px;
+}
+
+.radio-group{
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
