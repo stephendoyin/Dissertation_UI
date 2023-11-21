@@ -272,6 +272,11 @@ main {
   font-size: 14px;
 }
 
+.list-section-list-card-item-inner p.lg {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 
 .list-section-list {
   display: grid;
@@ -306,6 +311,10 @@ main {
 .list-section-right .list-section-list-card-initials-wrapper, .list-section-list-card-initials-wrapper.blu-bg {
   color: #396c92 !important;
   background: rgba(101, 172, 224, 0.12);
+}
+
+.list-section-list-card-initials-wrapper.is-grey{
+  background: rgba(0, 0, 0, 0.16) !important;
 }
 
 section.list-section {
