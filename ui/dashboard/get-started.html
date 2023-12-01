@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/bulma.min.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="form-wrapper sign-in">
+        <div class="form-card-wrapper">
+          <div>
+            <div class="form-card">
+              <div class="form-card-header">
+                <a
+                  href=""
+                  class="form-card-nav-link is-flex is-align-items-center"
+                >
+                  <img src="../assets/images/back-arrow.svg" alt="" />
+                  Back to home
+                </a>
+                <div class="form-card-nav-link-inner">
+                  <h3>Get started</h3>
+                  <img
+                    class="form-card-logo"
+                    src="../assets/images/logo.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <form class="form-container" autocomplete="off">
+                  <div class="field-top-strip">
+                      <b>Email address:</b> johndoe@gmail.com
+                  </div>
+                <div class="field-group">
+                  <div class="field">
+                    <div class="control">
+                      <input
+                        class="input"
+                        autocomplete="off"
+                        type="text"
+                        placeholder=""
+                        value="John"
+                      />
+                      <label for=""> First name </label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <input
+                        class="input"
+                        autocomplete="off"
+                        type="text"
+                        placeholder=""
+                        value="Doe"
+                      />
+                      <label for=""> Last name </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="field-group is-balance">
+                    <div class="field">
+                      <div class="control">
+                        <input
+                          class="input"
+                          autocomplete="off"
+                          type="text"
+                          placeholder=""
+                          value="c2045353"
+                        />
+                        <label for=""> Username </label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <Select>
+                            <option value="">Computing</option>
+                        </Select>
+                        <label for=""> Department </label>
+                      </div>
+                    </div>
+                  </div>
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input js-handle"
+                      autocomplete="off"
+                      type="password"
+                      placeholder=""
+                    />
+                    <label for=""> Password </label>
+                    <img
+                      src="../assets/images/eye-on.svg"
+                      class="eye-on"
+                      alt=""
+                    />
+                  </div>
+                  <div class="control">
+                    <input
+                      autocomplete="off"
+                      class="input"
+                      type="password"
+                      placeholder=""
+                    />
+                    <label for=""> Confirm password </label>
+                  </div>
+                </div>
+
+                <div
+                  class="is-flex is-align-items-center is-justify-content-space-between form-card-footer"
+                >
+                  
+                  <button class="button">Sign in</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="form-card-bt-strip">
+              <p c>Have an account?</p>
+              <a href="" class="is-flex is-align-item-center">
+                Register
+                <img src="../assets/images/front-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-inner">
+            <img src="../assets/images/logo.svg" alt="" />
+            <div class="footer-details">
+              <div class="footer-detials-item">
+                <a href="" class="footer-link">Privacy policy</a>
+              </div>
+              <div class="footer-detials-item">
+                <a href="" class="footer-link">Terms and condition</a>
+              </div>
+              <div class="footer-detials-item">
+                <p>Copyrights ©2023 Sheffield Hallam University.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      let inputJs = document.querySelector(".js-handle");
+      let label = document.querySelector(".js-handle~label");
+
+      inputJs.addEventListener("change", function () {
+        if (inputJs.value?.length >= 1) {
+          label.classList.add("is-active");
+        } else {
+          label.classList.remove("is-active");
+        }
+      });
+    </script>
+  </body>
+</html>

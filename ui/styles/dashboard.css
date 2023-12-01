@@ -411,6 +411,16 @@ section.list-section {
   grid-template-columns: 28.68% 28.68% 21.32% 21.32%;
 }
 
+.custom-table.dept .custom-table-row {
+  display: grid;
+  grid-template-columns: 8.13% 30% 30% 16% 15.87%;
+}
+
+.custom-table.courses .custom-table-row {
+  display: grid;
+  grid-template-columns: 8.13% 25% 30% 26% 10.87%;
+}
+
 .custom-table-row.header {
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.72);
@@ -556,6 +566,18 @@ section.list-section {
   display: grid;
   grid-template-columns: auto auto;
   gap: 24px;
+}
+
+.field-group.is-balance{
+  grid-template-columns: 1fr 1fr;
+}
+
+.field-top-strip{
+  background: #E0E0E0;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  
 }
 
 .modal-card-body{
