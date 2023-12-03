@@ -517,6 +517,21 @@ footer {
   margin-bottom: 24px;
 }
 
+.field .control.has-error{
+  border: 1px solid #C10000;
+}
+
+.field .control.has-text-below{
+  margin-bottom: 44px;
+}
+
+.field .control p.is-danger.help {
+  position: absolute;
+  bottom: -30px;
+  font-size: 1rem;
+  left: 0px;
+}
+
 .field .control label {
   position: absolute;
   left: 24px;
@@ -705,6 +720,8 @@ footer {
   font-weight: 700;
   line-height: normal;
 }
+
+
 
 @media only screen and (min-width: 768px) {
   .menu-burger {
