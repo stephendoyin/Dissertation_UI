@@ -55,49 +55,7 @@
                 <a href="" class="navbar-link is-arrowless"> Requests </a>
               </div>
               <div class="navbar-item">
-                <div class="dropdown nav-avatar-dropdown is-right is-active">
-                  <div class="dropdown-trigger">
-                    <div
-                      class="initials-wrapper"
-                      aria-haspopup="true"
-                      aria-controls="dropdown-menu2"
-                    >
-                      JD
-                    </div>
-                  </div>
-                  <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                    <div class="dropdown-content">
-                        <div class="bg-blur"></div>
-                      <div class="list-section-list-card-item aligned-tp">
-                        <div class="list-section-list-card-item-inner">
-                          <div class="list-section-list-card-initials-wrapper">
-                            JD
-                          </div>
-                          <div>
-                            <h6>John Doe</h6>
-                            <p class="sub">johndoe@sheffielduniversity.co.uk</p>
-                            <p class="sm">Computing</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="dropdown-item-content">
-                          <h6>Switch roles</h6>
-                          <div class="dropdwon-item is-active">
-                            Admin
-                            <img src="../assets/images/ci_checkbox-check.svg" alt="">
-                          </div>
-                          <div class="dropdwon-item">
-                            Super admin
-                          </div>
-                      </div>
-                      <div class="dropdown-footer">
-                          <button class="button ">
-                            Sign out
-                          </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div class="initials-wrapper">JD</div>
               </div>
             </div>
           </div>
@@ -110,7 +68,7 @@
             <div class="request-block">
               <div class="dashboard-header">
                 <div class="dashboard-header-inner">
-                  <h3>Pending requests</h3>
+                  <h3>Supervision requests</h3>
                   <button class="button">View all</button>
                 </div>
               </div>
@@ -118,15 +76,19 @@
                 <div class="request-card-list-card-item">
                   <div class="request-card-list-card-item-inner">
                     <div class="request-card-list-card-header">
-                      <span class="custom-tag">Pending</span>
+                      <span class="custom-tag green">Accepted</span>
                       <div class="interpunct"></div>
                       <span>9 hours ago</span>
                     </div>
                     <h5>John Doe</h5>
                     <p>Computing</p>
                     <div class="btn-group">
-                      <button class="button">Approve</button>
-                      <button class="button">Decline</button>
+                        <button class="button">
+                            Confirm
+                        </button>
+                        <button class="button">
+                            Cancel
+                        </button>
                     </div>
                   </div>
                 </div>
@@ -140,8 +102,7 @@
                     <h5>John Doe</h5>
                     <p>Computing</p>
                     <div class="btn-group">
-                      <button class="button">Approve</button>
-                      <button class="button">Decline</button>
+                      <button class="button">Cancel</button>
                     </div>
                   </div>
                   <img src="../assets/images/caret-forward.svg" alt="" />
@@ -156,8 +117,7 @@
                     <h5>John Doe</h5>
                     <p>Computing</p>
                     <div class="btn-group">
-                      <button class="button">Approve</button>
-                      <button class="button">Decline</button>
+                      <button class="button">Cancel</button>
                     </div>
                   </div>
                   <img src="../assets/images/caret-forward.svg" alt="" />
@@ -173,18 +133,76 @@
           <div class="container">
             <div class="list-section-left">
               <div class="list-section-list no-header">
-                <div class="list-section-list-card-item aligned-tp">
-                  <div class="list-section-list-card-item-inner">
-                    <div class="list-section-list-card-initials-wrapper">
-                      <img src="../assets/images/pic.png" alt="" />
+                <div class="list-section-list-card-item no-flex">
+                  <div
+                    class="list-section-list-card-item-inner aligned--center"
+                  >
+                    <div class="list-section-list-card-initials-wrapper lg">
+                      <img src="../assets/images/lg-avatar.png" alt="" />
                     </div>
-                    <div>
-                      <h6>John Doe</h6>
-                      <p class="sub">johndoe@sheffielduniversity.co.uk</p>
-                      <p class="sm">Computing</p>
-                    </div>
+                    <button class="button">Upload</button>
                   </div>
-                  <button class="button">Edit</button>
+                  <form action="">
+                    <div class="field-group">
+                        <div class="field">
+                          <div class="control">
+                            <input
+                              class="input"
+                              autocomplete="off"
+                              type="text"
+                              placeholder=""
+                              value="John"
+                            />
+                            <label for=""> First name </label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input
+                              class="input"
+                              autocomplete="off"
+                              type="text"
+                              placeholder=""
+                              value="Doe"
+                            />
+                            <label for=""> Last name </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="custom-control">
+                          <label for="">Email address: </label>
+                          <input
+                            class="input"
+                            autocomplete="off"
+                            type="text"
+                            placeholder=""
+                            value="johndoe@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="custom-control">
+                          <label for="">Course: </label>
+                          <input
+                            class="input"
+                            autocomplete="off"
+                            type="text"
+                            placeholder=""
+                            value="Computing"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="field-footer">
+                        <div class="btn-group">
+                                <button class="button is-primary is-lg">Save</button>
+                                <button class="button is-primary is-lg no-bg">Cancel</button>
+                        
+                        </div>
+                      </div>
+                  </form>
+                  
                 </div>
                 <div class="list-section-list-card-item aligned-tp">
                   <div class="list-section-list-card-item-inner">
@@ -206,17 +224,18 @@
                 </div>
                 <div class="list-section-list-card-item aligned-tp">
                   <div class="list-section-list-card-item-inner">
-                    <div
-                      class="list-section-list-card-initials-wrapper is-grey"
-                    >
-                      <img src="../assets/images/people.svg" alt="" />
+                    <div class="list-section-list-card-initials-wrapper">
+                      <img
+                        src="../assets/images/basil_file-solid-red.svg"
+                        alt=""
+                      />
                     </div>
                     <div>
-                      <h6>Supervision slot</h6>
-                      <p class="lg">26</p>
+                      <h6>Research proposal</h6>
+                      <p>abc.pdf</p>
                     </div>
                   </div>
-                  <button class="button">Upload</button>
+                  <button class="button">Update</button>
                 </div>
               </div>
             </div>
