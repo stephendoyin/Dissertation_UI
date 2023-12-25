@@ -517,6 +517,10 @@ footer {
   margin-bottom: 24px;
 }
 
+.field .control.has-textarea{
+  height: auto;
+}
+
 .field .control.has-error{
   border: 1px solid #C10000;
 }
@@ -541,8 +545,10 @@ footer {
 }
 
 .field .control input:focus ~ label,
+.field .control textarea:focus ~ label,
 .field .control select ~ label,
 .field .control input:not(:placeholder-shown) ~ label,
+.field .control textarea:not(:placeholder-shown) ~ label,
 .field .control label.is-active {
   font-size: 12px;
   top: 12px;
@@ -550,8 +556,8 @@ footer {
   z-index: 3;
 }
 
-.field .control .input,
-  .field .control select {
+.field .control .input,.field .control textarea
+  .field .control select, .field textarea {
   background: transparent !important;
   border: 0px solid;
   box-shadow: none;
@@ -561,6 +567,14 @@ footer {
   transform: translateY(8px);
   position: relative;
   z-index: 1;
+}
+
+.field .control textarea{
+width: 100%;
+min-height: 202px;
+padding-top: 8px;
+color: #333;
+font-style: italic;
 }
 
 .field .control select {
