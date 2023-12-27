@@ -504,6 +504,13 @@ footer {
   line-height: normal;
 }
 
+.form-card-nav-link-inner h3 span{
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
 .field .control {
   border-radius: 8px;
   background: #fff;
@@ -756,7 +763,35 @@ font-style: italic;
   padding: 0;
  }
 
+.form-select-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
 
+.form-select-list-item{
+  border-radius: 12px;
+background: #FFF;
+display: flex;
+padding: 24px 16px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 16px;
+flex: 1 0 0;
+cursor: pointer;
+}
+
+.form-select-list-clickable{
+  width: 100%;
+}
+
+.form-select-list-clickable h6{
+  font-size: 24px;
+  font-weight: 700;
+line-height: normal;
+color: #333;
+}
 
 @media only screen and (min-width: 768px) {
   .menu-burger {
