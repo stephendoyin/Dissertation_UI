@@ -1059,3 +1059,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .sub-navigation a:hover{
   background: rgba(0, 0, 0, 0.08);
 }
+
+.custom-btn-trigger{
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-btn-trigger:hover, .dropdown.is-active .custom-btn-trigger{
+  background-color: rgba(0, 0, 0, 0.116);
+}
+
+a.dropdown-item.is-active{
+  background-color: #454144;
+  color: #fff;
+}
+
+.dropdown-item.has-text-red{
+  color: #c7004e;
+}
